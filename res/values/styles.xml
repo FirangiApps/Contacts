@@ -394,7 +394,6 @@
     <!-- Button style for main contacts no account empty view. -->
     <style name="NoAccountViewButtonStyle" parent="@style/Widget.AppCompat.Button.Borderless">
         <item name="android:textSize">14sp</item>
-        <item name="android:textColor">@color/primary_color</item>
         <item name="android:fontFamily">sans-serif-medium</item>
         <item name="android:textAllCaps">true</item>
     </style>
@@ -402,7 +401,6 @@
     <!-- Add contacts button style for empty states. -->
     <style name="AddContactsButtonStyle" parent="@style/Widget.AppCompat.Button.Borderless">
         <item name="android:textSize">16sp</item>
-        <item name="android:textColor">@color/primary_color</item>
         <item name="android:fontFamily">sans-serif-medium</item>
         <item name="android:textAllCaps">true</item>
     </style>
@@ -410,13 +408,13 @@
     <style name="SectionHeaderStyle" parent="@android:style/TextAppearance.Large">
         <item name="android:textSize">16sp</item>
         <item name="android:textAllCaps">true</item>
-        <item name="android:textColor">@color/section_header_text_color</item>
+        <item name="android:textColor">@color/colorAccent</item>
         <item name="android:textStyle">bold</item>
     </style>
 
     <style name="DirectoryHeaderStyle" parent="@android:style/TextAppearance.Small">
         <item name="android:textSize">14sp</item>
-        <item name="android:textColor">@color/dialtacts_secondary_text_color</item>
+        <item name="android:textColor">@color/colorAccent</item>
         <item name="android:fontFamily">sans-serif-medium</item>
     </style>
 
@@ -559,7 +557,6 @@ background and text color. See also android:style/Widget.Holo.TextView.ListSepar
     </style>
 
     <style name="DrawerTextStyle">
-        <item name="android:fontFamily" tools:ignore="NewApi">sans-serif-medium</item>
         <item name="android:gravity">center_vertical</item>
         <item name="android:layout_gravity">center_vertical</item>
         <item name="android:textSize">14sp</item>
@@ -568,20 +565,20 @@ background and text color. See also android:style/Widget.Holo.TextView.ListSepar
     </style>
 
     <style name="DrawerItemTextActiveStyle">
-        <item name="android:textColor">@color/primary_color</item>
+        <item name="android:textColor">@color/colorAccent</item>
         <item name="android:textStyle">bold</item>
     </style>
 
     <style name="DrawerItemTextInactiveStyle">
         <item name="android:textColor">@color/quantum_black_text</item>
-        <item name="android:textStyle">bold</item>
     </style>
 
     <style name="DrawerHeaderTextStyle" parent="DrawerTextStyle">
         <item name="android:layout_gravity">center_vertical|start</item>
-        <item name="android:paddingTop">12dp</item>
-        <item name="android:paddingBottom">12dp</item>
-        <item name="android:textColor">@color/quantum_black_secondary_text</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:paddingBottom">8dp</item>
+        <item name="android:textColor">@color/quantum_black_text</item>
+        <item name="android:textStyle">bold</item>
         <item name="android:textSize">14sp</item>
     </style>
 

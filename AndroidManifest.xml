@@ -250,13 +250,13 @@
             android:exported="false"
             android:label="@string/activity_title_settings"
             android:launchMode="singleTop"
-            android:theme="@style/ContactsPreferencesTheme" />
+            android:theme="@style/CustomPreferenceThemeAppCompat" />
 
         <activity
             android:name=".activities.LicenseActivity"
             android:exported="true"
             android:label="@string/activity_title_licenses"
-            android:theme="@style/ContactsPreferencesTheme" />
+            android:theme="@style/CustomPreferenceThemeAppCompat" />
 
         <!-- Used to filter contacts list by account -->
         <activity

@@ -16,4 +16,4 @@
 
 <!-- Based on the Theme.Material's default selectableItemBackgroundBorderless -->
 <ripple xmlns:android="http://schemas.android.com/apk/res/android"
-    android:color="@color/ripple_material_dark" />
+    android:color="@color/ripple_material_darker" />

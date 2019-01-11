@@ -1022,15 +1022,6 @@ public class DefaultContactBrowseListFragment extends ContactBrowseListFragment
         // Debug options need to be visible even in search mode.
         makeMenuItemVisible(menu, R.id.export_database, mEnableDebugMenuOptions &&
                 hasExportIntentHandler());
-
-        // Light tint the icons for normal mode, dark tint for search or selection mode.
-        for (int i = 0; i < menu.size(); ++i) {
-            final Drawable icon = menu.getItem(i).getIcon();
-            if (icon != null && !isSearchOrSelectionMode) {
-                icon.mutate().setColorFilter(ContextCompat.getColor(getContext(),
-                        R.color.actionbar_icon_color), PorterDuff.Mode.SRC_ATOP);
-            }
-        }
     }
 
     private void makeMenuItemVisible(Menu menu, int itemId, boolean visible) {

@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <!-- Copyright (C) 2014 The Android Open Source Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
@@ -16,10 +17,11 @@
 
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/toolbar_parent"
-    android:orientation="vertical"
     android:layout_width="match_parent"
-    android:elevation="@dimen/tab_elevation"
-    android:layout_height="wrap_content" >
+    android:layout_height="wrap_content"
+    android:background="#00000000"
+    android:elevation="1dp"
+    android:orientation="vertical">
 
     <FrameLayout
         android:id="@+id/toolbar_frame"
@@ -29,11 +31,11 @@
 
         <!-- the attribute padding removes the gap between this Toolbar and its parent FrameLayout on tablet -->
         <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            style="@style/Widget.Contacts.ActionBar"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
-            android:id="@+id/toolbar"
-            android:padding="0dp"
-            style="@style/ContactsToolbarStyle" />
+            android:padding="0dp" />
 
     </FrameLayout>
 </LinearLayout>

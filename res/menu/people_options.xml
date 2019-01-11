@@ -25,7 +25,7 @@
         android:id="@+id/export_database"
         android:title="@string/menu_export_database"
         android:visible="false"
-        android:showAsAction="never" />
+        contacts:showAsAction="never" />
 
     <item
         android:id="@+id/menu_share"

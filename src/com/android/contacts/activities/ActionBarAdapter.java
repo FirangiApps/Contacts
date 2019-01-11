@@ -373,7 +373,7 @@ public class ActionBarAdapter implements OnCloseListener {
 
         // Update toolbar and status bar color.
         mToolBarFrame.setBackgroundColor(MaterialColorMapUtils.getToolBarColor(mActivity));
-        updateStatusBarColor(isSelectionModeChanging && !isSearchModeChanging);
+        //updateStatusBarColor(isSelectionModeChanging && !isSearchModeChanging);
 
         // When skipAnimation=true, it is possible that we will switch from search mode
         // to selection mode directly. So we need to remove the undesired container in addition
