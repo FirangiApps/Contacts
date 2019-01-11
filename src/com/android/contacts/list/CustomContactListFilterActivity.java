@@ -130,7 +130,7 @@ public class CustomContactListFilterActivity extends AppCompatActivity implement
         if (actionBar != null) {
             // android.R.id.home will be triggered in onOptionsItemSelected()
             actionBar.setDisplayHomeAsUpEnabled(true);
-            actionBar.setElevation(1.0f);
+            actionBar.setElevation(2.0f);
         }
     }
 

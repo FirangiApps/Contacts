@@ -67,7 +67,7 @@ public class AccountFilterActivity extends AppCompatActivity implements AdapterV
         ActionBar actionBar = getSupportActionBar();
         if (actionBar != null) {
             actionBar.setDisplayHomeAsUpEnabled(true);
-            actionBar.setElevation(1.0f);
+            actionBar.setElevation(2.0f);
         }
 
         mCurrentFilterType = ContactListFilterController.getInstance(this).isCustomFilterPersisted()

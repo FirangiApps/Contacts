@@ -72,7 +72,7 @@ public final class ContactsPreferenceActivity extends PreferenceActivity
         final ActionBar actionBar = mCompatDelegate.getSupportActionBar();
         if (actionBar != null) {
             actionBar.setDisplayOptions(ActionBar.DISPLAY_HOME_AS_UP, ActionBar.DISPLAY_HOME_AS_UP);
-            actionBar.setElevation(1.0f);
+            actionBar.setElevation(2.0f);
         }
 
         mProviderStatusWatcher = ProviderStatusWatcher.getInstance(this);
