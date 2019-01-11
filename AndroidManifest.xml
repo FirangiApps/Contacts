@@ -262,13 +262,13 @@
         <activity
             android:name=".list.AccountFilterActivity"
             android:label="@string/activity_title_contacts_filter"
-            android:theme="@style/ContactListFilterTheme" />
+            android:theme="@style/CustomPreferenceThemeAppCompat" />
 
         <!-- Used to select display and sync groups -->
         <activity
             android:name=".list.CustomContactListFilterActivity"
             android:label="@string/custom_list_filter"
-            android:theme="@style/ContactListFilterTheme" />
+            android:theme="@style/CustomPreferenceThemeAppCompat" />
 
         <activity
             android:name=".activities.RequestPermissionsActivity"

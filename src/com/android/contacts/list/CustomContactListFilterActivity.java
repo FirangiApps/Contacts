@@ -16,7 +16,6 @@
 
 package com.android.contacts.list;
 
-import android.app.ActionBar;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.Dialog;
@@ -41,6 +40,8 @@ import android.os.RemoteException;
 import android.provider.ContactsContract;
 import android.provider.ContactsContract.Groups;
 import android.provider.ContactsContract.Settings;
+import android.support.v7.app.ActionBar;
+import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.ContextMenu;
 import android.view.LayoutInflater;
@@ -84,7 +85,7 @@ import javax.annotation.Nullable;
  * Shows a list of all available {@link Groups} available, letting the user
  * select which ones they want to be visible.
  */
-public class CustomContactListFilterActivity extends Activity implements
+public class CustomContactListFilterActivity extends AppCompatActivity implements
         ExpandableListView.OnChildClickListener,
         LoaderCallbacks<CustomContactListFilterActivity.AccountSet> {
     private static final String TAG = "CustomContactListFilter";
@@ -125,10 +126,11 @@ public class CustomContactListFilterActivity extends Activity implements
 
         mList.setAdapter(mAdapter);
 
-        ActionBar actionBar = getActionBar();
+        ActionBar actionBar = getSupportActionBar();
         if (actionBar != null) {
             // android.R.id.home will be triggered in onOptionsItemSelected()
             actionBar.setDisplayHomeAsUpEnabled(true);
+            actionBar.setElevation(1.0f);
         }
     }
 
