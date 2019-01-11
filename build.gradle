@@ -102,4 +102,5 @@ dependencies {
     implementation "androidx.transition:transition:${SUPPORT_LIBS_VERSION}"
     implementation "androidx.legacy:legacy-support-v13:${SUPPORT_LIBS_VERSION}"
     implementation "androidx.recyclerview:recyclerview:${SUPPORT_LIBS_VERSION}"
+    implementation "androidx.preference:preference:${SUPPORT_LIBS_VERSION}"
 }

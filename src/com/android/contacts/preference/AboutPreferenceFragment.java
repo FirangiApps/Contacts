@@ -23,8 +23,8 @@ import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
 import android.net.Uri;
 import android.os.Bundle;
-import android.preference.Preference;
-import android.preference.PreferenceFragment;
+import androidx.preference.Preference;
+import androidx.preference.PreferenceFragment;
 import android.widget.Toast;
 
 import com.android.contacts.R;
@@ -40,6 +40,10 @@ public class AboutPreferenceFragment extends PreferenceFragment {
 
     public static AboutPreferenceFragment newInstance() {
         return new AboutPreferenceFragment();
+    }
+
+    @Override
+    public void onCreatePreferences(Bundle savedInstanceState, String rootKey) {
     }
 
     @Override

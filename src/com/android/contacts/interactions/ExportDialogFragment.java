@@ -85,6 +85,7 @@ public class ExportDialogFragment extends DialogFragment {
 
     @Override
     public Dialog onCreateDialog(Bundle savedInstanceState) {
+        setStyle(STYLE_NORMAL, R.style.ContactsAlertDialogTheme);
         // Wrap our context to inflate list items using the correct theme
         final Resources res = getActivity().getResources();
         final LayoutInflater dialogInflater = (LayoutInflater)getActivity()

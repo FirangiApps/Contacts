@@ -29,8 +29,8 @@ import android.content.res.Resources;
 import android.database.Cursor;
 import android.net.Uri;
 import android.os.Bundle;
-import android.preference.Preference;
-import android.preference.PreferenceFragment;
+import androidx.preference.Preference;
+import androidx.preference.PreferenceFragment;
 import android.provider.BlockedNumberContract;
 import android.provider.ContactsContract.Contacts;
 import android.provider.ContactsContract.DisplayNameSources;
@@ -248,6 +248,11 @@ public class DisplayOptionsPreferenceFragment extends PreferenceFragment
     }
 
     @Override
+    public void onCreatePreferences(Bundle savedInstanceState, String rootKey) {
+
+    }
+
+    @Override
     public void onActivityCreated(Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
         getLoaderManager().initLoader(LOADER_PROFILE, null, mProfileLoaderListener);
@@ -310,8 +315,8 @@ public class DisplayOptionsPreferenceFragment extends PreferenceFragment
     @Override
     public void onAccountsLoaded(List<AccountInfo> accounts) {
         // Hide accounts preferences if no writable accounts exist
-        final DefaultAccountPreference preference =
-                (DefaultAccountPreference) findPreference(KEY_DEFAULT_ACCOUNT);
+        final DefaultAccountPreference preference;
+        preference = (DefaultAccountPreference) findPreference(KEY_DEFAULT_ACCOUNT);
         preference.setAccounts(accounts);
     }
 

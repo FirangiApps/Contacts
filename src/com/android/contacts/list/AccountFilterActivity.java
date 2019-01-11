@@ -123,16 +123,13 @@ public class AccountFilterActivity extends AppCompatActivity implements AdapterV
             return;
         }
 
-        switch (requestCode) {
-            case SUBACTIVITY_CUSTOMIZE_FILTER: {
-                final Intent intent = new Intent();
-                ContactListFilter filter = ContactListFilter.createFilterWithType(
-                        ContactListFilter.FILTER_TYPE_CUSTOM);
-                intent.putExtra(EXTRA_CONTACT_LIST_FILTER, filter);
-                setResult(Activity.RESULT_OK, intent);
-                finish();
-                break;
-            }
+        if (requestCode == SUBACTIVITY_CUSTOMIZE_FILTER) {
+            final Intent intent = new Intent();
+            ContactListFilter filter = ContactListFilter.createFilterWithType(
+                    ContactListFilter.FILTER_TYPE_CUSTOM);
+            intent.putExtra(EXTRA_CONTACT_LIST_FILTER, filter);
+            setResult(Activity.RESULT_OK, intent);
+            finish();
         }
     }
 
@@ -186,15 +183,11 @@ public class AccountFilterActivity extends AppCompatActivity implements AdapterV
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        switch (item.getItemId()) {
-            case android.R.id.home:
-                // We have two logical "up" Activities: People and Phone.
-                // Instead of having one static "up" direction, behave like back as an
-                // exceptional case.
-                onBackPressed();
-                return true;
-            default:
-                break;
+        if (item.getItemId() == android.R.id.home) {// We have two logical "up" Activities: People and Phone.
+            // Instead of having one static "up" direction, behave like back as an
+            // exceptional case.
+            onBackPressed();
+            return true;
         }
         return super.onOptionsItemSelected(item);
     }
