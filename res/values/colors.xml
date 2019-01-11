@@ -159,10 +159,10 @@
 
     <!-- The default color used for tinting photos when no color can be extracted via Palette,
             this is Blue Grey 500 -->
-    <color name="quickcontact_default_photo_tint_color">#607D8B</color>
+    <color name="quickcontact_default_photo_tint_color">@color/colorAccent</color>
     <!-- The default secondary color when no color can be extracted via Palette,
             this is Blue Grey 700 -->
-    <color name="quickcontact_default_photo_tint_color_dark">#455A64</color>
+    <color name="quickcontact_default_photo_tint_color_dark">@color/colorAccent</color>
 
 
     <color name="letter_tile_default_color">#cccccc</color>
