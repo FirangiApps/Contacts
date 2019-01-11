@@ -685,11 +685,6 @@ public class ContactSelectionActivity extends AppCompatContactsActivity implemen
         final MenuItem searchItem = menu.findItem(R.id.menu_search);
         searchItem.setVisible(!mIsSearchMode && mIsSearchSupported);
 
-        final Drawable searchIcon = searchItem.getIcon();
-        if (searchIcon != null) {
-            searchIcon.mutate().setColorFilter(ContextCompat.getColor(this,
-                    R.color.actionbar_icon_color), PorterDuff.Mode.SRC_ATOP);
-        }
         return true;
     }
 

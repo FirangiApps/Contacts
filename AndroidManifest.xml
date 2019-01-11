@@ -178,7 +178,7 @@
             android:name=".activities.ContactSelectionActivity"
             android:clearTaskOnLaunch="true"
             android:launchMode="singleTop"
-            android:theme="@style/ContactPickerTheme"
+            android:theme="@style/CustomPeopleThemeAppCompat"
             android:uiOptions="splitActionBarWhenNarrow"
             android:visibleToInstantApps="true"
             android:windowSoftInputMode="adjustResize">

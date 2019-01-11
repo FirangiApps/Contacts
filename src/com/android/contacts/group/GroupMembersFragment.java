@@ -292,11 +292,6 @@ public class GroupMembersFragment extends MultiSelectContactsListFragment<GroupM
         final MenuItem menuItem = menu.findItem(id);
         if (menuItem != null) {
             menuItem.setVisible(visible);
-            final Drawable icon = menuItem.getIcon();
-            if (icon != null) {
-                icon.mutate().setColorFilter(ContextCompat.getColor(context,
-                        R.color.actionbar_icon_color), PorterDuff.Mode.SRC_ATOP);
-            }
         }
     }
 
