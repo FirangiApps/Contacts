@@ -40,7 +40,7 @@ import android.provider.ContactsContract.CommonDataKinds.Relation;
 import android.provider.ContactsContract.CommonDataKinds.SipAddress;
 import android.provider.ContactsContract.CommonDataKinds.StructuredPostal;
 import android.provider.ContactsContract.CommonDataKinds.Website;
-import android.support.v4.content.res.ResourcesCompat;
+import androidx.core.content.res.ResourcesCompat;
 import android.text.TextUtils;
 import android.widget.ImageView;
 
@@ -52,7 +52,6 @@ import com.android.contacts.R;
 import com.android.contacts.model.ValuesDelta;
 import com.android.contacts.model.account.AccountDisplayInfo;
 import com.android.contacts.model.account.AccountInfo;
-import com.android.contacts.model.dataitem.DataKind;
 import com.android.contacts.util.ContactPhotoUtils;
 import com.android.contacts.util.MaterialColorMapUtils.MaterialPalette;
 import com.android.contacts.widget.QuickContactImageView;

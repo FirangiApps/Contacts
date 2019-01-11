@@ -33,7 +33,7 @@
         android:background="?attr/colorPrimary">
 
         <!-- the attribute padding removes the gap between this Toolbar and its parent FrameLayout on tablet -->
-        <android.support.v7.widget.Toolbar
+        <androidx.appcompat.widget.Toolbar
             android:id="@+id/toolbar"
             style="@style/Widget.Contacts.ActionBar"
             android:layout_width="match_parent"
