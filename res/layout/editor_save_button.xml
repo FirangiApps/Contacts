@@ -19,6 +19,6 @@
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:text="@string/menu_save"
-    android:textColor="@color/action_bar_button_text_color"
-    android:textSize="14sp">
+    android:textColor="?android:attr/textColorPrimary"
+    android:textSize="16sp">
 </Button>

@@ -16,7 +16,6 @@
 -->
 <resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
 
-
     <style name="CustomThemeAppCompatList" parent="@style/Theme.AppCompat.Light.NoActionBar">
         <item name="list_item_height">@dimen/contact_browser_list_item_height</item>
         <item name="list_section_header_height">24dip</item>
@@ -91,5 +90,5 @@
     <style name="ThemeOverlay.Contacts.ActionBar" parent="ThemeOverlay.AppCompat.ActionBar">
         <item name="android:letterSpacing">0.025</item>
     </style>
-    
+
 </resources>
