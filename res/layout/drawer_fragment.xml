@@ -26,9 +26,10 @@
 
     <ListView
         android:id="@+id/list"
-        android:background="@color/navigation_drawer_background_color"
+        android:background="?android:attr/colorBackground"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:paddingEnd="8dp"
         android:clipToPadding="false"
         android:divider="@null" />
 </FrameLayout>
